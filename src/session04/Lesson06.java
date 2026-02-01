@@ -6,10 +6,7 @@ import java.util.regex.*;
 public class Lesson06 {
     public static void main(String[] args) {
         String review = """
-                Cuốn sách này thật sự rất hay, nhưng có một số đoạn nội dung khá ngu ngốc 
-                và tệ hại. Tôi không thích cách tác giả viết ở phần cuối vì quá dở và thiếu logic.
-                Tuy nhiên nhìn chung vẫn đáng đọc cho sinh viên.
-                """;
+                Cuốn sách này thật ngu ngốc """;
         List<String> blacklist = Arrays.asList(
                 "ngu ngốc",
                 "tệ hại",

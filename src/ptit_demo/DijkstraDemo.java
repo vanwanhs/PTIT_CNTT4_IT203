@@ -1,3 +1,5 @@
+package ptit_demo;
+
 import java.util.*;
 
 public class DijkstraDemo {
