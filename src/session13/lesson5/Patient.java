@@ -1,43 +1,13 @@
 package lesson5;
 
 public class Patient {
-    private String id;
-    private String fullName;
-    private int age;
-    private String diagnosis;
+    String name;
+    int severity;      // 1: Nguy kịch, 2: Nặng, 3: Nhẹ
+    int arrivalTime;   // phút
 
-    public Patient(String id, String fullName, int age, String diagnosis) {
-        this.id = id;
-        this.fullName = fullName;
-        this.age = age;
-        this.diagnosis = diagnosis;
-    }
-
-    public String getId() {
-        return id;
-    }
-
-    public String getFullName() {
-        return fullName;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public String getDiagnosis() {
-        return diagnosis;
-    }
-
-    public void setDiagnosis(String diagnosis) {
-        this.diagnosis = diagnosis;
-    }
-
-    @Override
-    public String toString() {
-        return String.format(
-                "ID: %s | Tên: %s | Tuổi: %d | Chẩn đoán: %s",
-                id, fullName, age, diagnosis
-        );
+    public Patient(String name, int severity, int arrivalTime) {
+        this.name = name;
+        this.severity = severity;
+        this.arrivalTime = arrivalTime;
     }
 }
