@@ -72,7 +72,6 @@ public class Main16 {
                         }
                     }
                     break;
-
                 case 5:
                     Pet served = spaService.serveNext();
                     if (served != null) {
